@@ -2331,37 +2331,65 @@ const CARDS = {
   JOR: [
     { type: 'ebrd', name: 'Northern Green Substation', stats: [['$56.5m', 'EBRD loan, 2025'], ['€12.4m', 'EU grant'], ['400 kV', 'new substation']],
       line: 'A new northern substation and four lines raise how much renewable power the grid can take, and enable links to neighbours.', levers: ['grid', 'ic'] },
+    { type: 'ebrd', name: 'NEPCO grid upgrades', stats: [['$28m', 'loan, 2024'], ['3', '132/33 kV substations'], ['Less', 'curtailment and losses']],
+      line: 'Abdoun, Irbid North-West and Amman North: substations that let the grid absorb more solar and wind instead of turning it down.', levers: ['grid'] },
     { type: 'ebrd', name: 'NEPCO grid and reform loan', stats: [['$265m', 'loan, 2018'], ['Substations', 'and grid automation']],
       line: 'Funded new substations, grid management and lines to absorb renewables, with a reform programme at the national grid company.', levers: ['grid'] },
     { type: 'ebrd', name: 'Ten renewable deals, rounds 1 and 2', stats: [['10', 'private solar and wind projects'], ['500+ MW', 'EBRD-backed capacity'], ['86 MW', 'Al Rajef, first private wind']],
-      line: 'From the first Ma’an solar plants in 2014 to FRV Empire, Mafraq and Al Rajef: the private deals behind Jordan’s 27% renewables share.', levers: ['solar'] } ],
-  EGY: [ { type: 'ebrd', name: 'Obelisk solar and storage', stats: [['1.1 GW', 'solar'], ['200 MWh', 'battery'], ['$479m', 'with AfDB and BII']],
-      line: 'Egypt’s first large solar-plus-battery plant shifts daytime solar into the evening peak and cuts gas burn.', levers: ['solar', 'battery'] } ],
+      line: 'From the first Ma’an solar plants in 2014 to FRV Empire, Mafraq, Shobak and Al Rajef: the private deals behind Jordan’s 27% renewables share.', levers: ['solar'] } ],
+  EGY: [
+    { type: 'ebrd', name: 'Obelisk solar and storage', stats: [['1.1 GW', 'solar'], ['200 MWh', 'battery'], ['$479m', 'with AfDB and BII']],
+      line: 'Egypt’s first large solar-plus-battery plant shifts daytime solar into the evening peak and cuts gas burn.', levers: ['solar', 'battery'] },
+    { type: 'ebrd', name: 'Suez Wind, 1.1 GW', stats: [['1.1 GW', 'wind, Gulf of Suez'], ['$200m', 'EBRD loan, 2024'], ['$1.06bn', 'total cost']],
+      line: 'ACWA Power and HAU Energy’s wind farm, one of the largest in Africa, displaces gas at the plants that would otherwise run at night.', levers: ['solar'] },
+    { type: 'ebrd', name: 'Benban solar park', stats: [['16', 'plants EBRD financed'], ['~750 MW', 'EBRD-backed capacity'], ['2017', 'financial close']],
+      line: 'The round that made Egypt a solar market: sixteen private plants at Benban in Aswan, the bank’s largest renewables programme at the time.', levers: ['solar'] },
+    { type: 'ebrd', name: 'NWFE grid reinforcement', stats: [['€170m', 'sovereign loan, 2025'], ['200 km', '500 kV line'], ['2.1 GW', 'of wind it carries']],
+      line: 'A Cairo substation upgrade and a 200 km line so Gulf of Suez wind actually reaches the load. Generation without wires is a stranded asset.', levers: ['grid'] },
+    { type: 'ebrd', name: 'Horus battery storage', stats: [['250 MW', '500 MWh'], ['$61m', 'EBRD loan, 2026'], ['Zafarana', 'grid-scale, standalone']],
+      line: 'AMEA Power’s standalone battery, one of the first in Egypt, gives the grid an hour of flexibility at the evening peak.', levers: ['battery'] } ],
   TUN: [
     { type: 'ebrd', name: 'Sidi Bouzid and Tozeur solar', stats: [['120 MW', 'two 60 MW plants'], ['€25m', 'EBRD, CTF and GEF'], ['2024', 'financial close']],
       line: 'Scatec’s two solar plants, financed with Proparco, cut the gas Tunisia burns at midday. EBRD has backed Tunisian renewables for seven years.', levers: ['solar'] },
+    { type: 'ebrd', name: 'Gafsa and Menzel Habib solar', stats: [['200 MW', 'two 100 MW plants'], ['€67m', 'EBRD loans, 2025–26'], ['25 yr', 'power sales to STEG']],
+      line: 'Qair’s Gafsa and Voltalia’s Menzel Habib plants, the second private round: Tunisia’s renewables from 777 MW towards the 35% target.', levers: ['solar'] },
+    { type: 'ebrd', name: 'STEG solar, storage and grid', stats: [['50 MW', 'solar, Tataouine'], ['20 MWh', 'battery'], ['€50m', 'EBRD and CTF, 2026']],
+      line: 'The utility’s own plant with a battery and a 225 kV connection: the first time STEG builds storage next to solar.', levers: ['solar', 'battery', 'grid'] },
     { type: 'ebrd', name: 'ELMED interconnector', stats: [['600 MW', 'HVDC link to Italy'], ['200 km', 'subsea cable'], ['€45m', 'EBRD loan']],
-      line: 'Tunisia’s first power link to Europe, due 2028, adds a second source of supply beside Algerian gas.', levers: ['ic'] } ],
+      line: 'Tunisia’s first power link to Europe, due 2028, adds a second source of supply beside Algerian gas. A grid reinforcement loan to STEG follows it in 2025.', levers: ['ic', 'grid'] } ],
   MAR: [
     { type: 'ebrd', name: 'ONEE sustainability-linked loan', stats: [['€300m', 'loan, 2025'], ['2 targets', 'carbon intensity, renewables share']],
       line: 'Ties the national utility’s finance to cutting carbon intensity and raising the renewables share.', levers: ['grid', 'solar', 'eff'] },
     { type: 'ebrd', name: 'Koudia Al Baida repowering', stats: [['50 → 100 MW', 'wind capacity'], ['€49m', 'EBRD package']],
-      line: 'Repowers Africa’s oldest utility-scale wind farm, doubling capacity on the same site.', levers: ['solar'] } ],
+      line: 'Repowers Africa’s oldest utility-scale wind farm, doubling capacity on the same site. Khalladi wind, 2015, was the first private wind deal.', levers: ['solar'] } ],
   TUR: [
     { type: 'ebrd', name: 'Polat Enerji hybrid site', stats: [['46.6 MW', 'solar'], ['10 MWh', 'battery'], ['$70m', 'incl. $5m CTF']],
       line: 'Türkiye’s first site combining wind, solar and battery storage, so renewable output can be shifted.', levers: ['battery', 'solar'] },
     { type: 'ebrd', name: 'Enerjisa wind expansion', stats: [['250 MW', 'new wind'], ['~$200m', 'EBRD financing']],
-      line: 'Adds wind in Muğla to cut gas imports, with a reskilling programme for coal workers.', levers: ['solar'] } ],
+      line: 'Adds wind in Muğla to cut gas imports, with a reskilling programme for coal workers.', levers: ['solar'] },
+    { type: 'ebrd', name: 'Enerjisa distribution networks', stats: [['$207m', 'in lira, 2026'], ['3 regions', 'Ankara, Istanbul, Toroslar'], ['Grid', 'expansion and modernisation']],
+      line: 'The wires that reach ten million customers: a lira loan to expand and modernise distribution in Başkent, Ayedaş and Toroslar.', levers: ['grid'] } ],
   UZB: [
     { type: 'ebrd', name: 'Sazagan solar and storage', stats: [['1 GW', 'solar'], ['1,336 MWh', 'battery'], ['$142m', 'EBRD loans']],
       line: 'Central Asia’s largest solar-plus-storage project, carrying solar into the evening peak.', levers: ['solar', 'battery'] },
+    { type: 'ebrd', name: 'Zarafshon, Bash and Dzhankeldy wind', stats: [['1.5 GW', 'three wind farms'], ['2022', 'approved'], ['Masdar, ACWA', 'sponsors']],
+      line: 'The country’s first gigawatts of wind, in Navoi and Bukhara: the reason the game credits Uzbekistan with 1.65 GW of EBRD-financed wind.', levers: ['solar'] },
+    { type: 'ebrd', name: 'Sarimay–Muruntau line', stats: [['230 km', '500 kV'], ['$66m', 'loan to NEGU, 2024'], ['North-west', 'to south-west']],
+      line: 'Joins the renewable-rich north-west to the south-west load. Without it the wind farms above would be curtailed.', levers: ['grid'] },
     { type: 'ebrd', name: 'Tashkent Riverside', stats: [['200 MW', 'solar'], ['500 MWh', 'battery'], ['$229m', 'facility']],
       line: 'One of the region’s first large batteries, giving the grid flexibility at peak demand.', levers: ['battery'] } ],
   IRQ: [
     { type: 'pipe', name: 'EBRD in Iraq', stats: [['22 GW', 'power gap, end-2025'], ['150 MW', 'from Jordan, reaching only Anbar'], ['0', 'EBRD projects so far']],
       line: 'Utility-scale solar, grid rehabilitation and a real link to neighbours are the frontier. The game shows what the gap costs.', levers: ['solar', 'grid', 'ic'] } ],
-  KAZ: [ { type: 'ebrd', name: 'Mirny wind and storage', stats: [['1 GW', 'wind'], ['600 MWh', 'battery'], ['$250m', 'EBRD investment']],
-      line: 'Kazakhstan’s first large wind-plus-storage project, led by TotalEnergies, reduces reliance on coal.', levers: ['solar', 'battery'] } ],
+  KAZ: [
+    { type: 'ebrd', name: 'Mirny wind and storage', stats: [['1 GW', 'wind'], ['600 MWh', 'battery'], ['$250m', 'EBRD investment']],
+      line: 'Kazakhstan’s first large wind-plus-storage project, led by TotalEnergies, reduces reliance on coal.', levers: ['solar', 'battery'] },
+    { type: 'ebrd', name: 'KEGOC West Zone link', stats: [['604 km', '500 kV line'], ['€297m', 'EBRD loan, 2024'], ['West', 'joins the national grid']],
+      line: 'Ulke to Karabatan: the west of Kazakhstan has run as an island; this line ties it to the unified system and to the wind coming behind it.', levers: ['grid', 'ic'] },
+    { type: 'ebrd', name: 'Alatau Zharyk grid, Almaty', stats: [['KZT 105bn', 'loan in tenge, 2026'], ['35–110 kV', 'lines, substations'], ['2026–28', 'smart-grid programme']],
+      line: 'Rebuilds the distribution network of the country’s largest city for 2026–28, where ageing lines cause most of the outages.', levers: ['grid', 'eff'] },
+    { type: 'ebrd', name: 'Mangystau wind and solar', stats: [['77 MW', 'wind'], ['50 MW', 'solar'], ['$90m', 'EBRD loan, 2025']],
+      line: 'Eni Plenitude and KazMunayGas pair wind and solar on one site in the oil-producing west, next to the new line.', levers: ['solar'] } ],
 };
 const BADGE = { ebrd: 'EBRD-financed', peer: 'Peer project · not EBRD', pipe: 'EBRD pipeline' };
 function cards() { newChapter('cards'); only('cardsOv'); st.page = 0; hud(`${COUNTRIES[st.code].name} · Projects`, null); renderCards(); }
@@ -2482,6 +2510,6 @@ function frame() {
 $('loading').hidden = true;
 attract();
 requestAnimationFrame(frame);
-window.__dbg = { au: AU, dioY: () => dio ? dio.assets.map(x => [x.lever, +(x.obj.position.y - (x.lever==='ic'||x.lever==='eff'? x.obj.position.y : dio.y)).toFixed(3), x.state]) : null, info: () => ({ geo: renderer.info.memory.geometries, tex: renderer.info.memory.textures, objs: scene.children.length, labels: labels.length, flows: flows.length, dashes: dashes.length, dashesOn: dashes.filter(d => d.k).length, tweens: tweens.filter(t => !t.dead).length, timers: timers.length, typing: !!typeT, cutting, slug: +$('slug').style.opacity || 0, feed: $('feed').style.display === 'block', camTw: !!(camTw && !camTw.dead), quality, crisis: { on: crisis.on, p: +crisis.p.toFixed(3), dark: crisis.lit, day: dayNow, cityN: dio ? dio.city.n : 0, cityL: dio && dio.city.state ? +dio.city.state.l.toFixed(3) : null,
+window.__dbg = { au: AU, showCards: (code, page=0) => { st.code = code; st.plan = st.plan || {}; cards(); st.page = page; renderCards(); }, dioY: () => dio ? dio.assets.map(x => [x.lever, +(x.obj.position.y - (x.lever==='ic'||x.lever==='eff'? x.obj.position.y : dio.y)).toFixed(3), x.state]) : null, info: () => ({ geo: renderer.info.memory.geometries, tex: renderer.info.memory.textures, objs: scene.children.length, labels: labels.length, flows: flows.length, dashes: dashes.length, dashesOn: dashes.filter(d => d.k).length, tweens: tweens.filter(t => !t.dead).length, timers: timers.length, typing: !!typeT, cutting, slug: +$('slug').style.opacity || 0, feed: $('feed').style.display === 'block', camTw: !!(camTw && !camTw.dead), quality, crisis: { on: crisis.on, p: +crisis.p.toFixed(3), dark: crisis.lit, day: dayNow, cityN: dio ? dio.city.n : 0, cityL: dio && dio.city.state ? +dio.city.state.l.toFixed(3) : null,
   vig: $('stage').style.getPropertyValue('--vig-in'), tick: $('tickerOv').style.getPropertyValue('--crisis'), hemiI: +hemi.intensity.toFixed(3), sunI: +sun.intensity.toFixed(3), hemiHex: hemi.color.getHexString() } }), setResult: (plan) => { st.plan = plan; st.result = evaluate(st.code, plan); st.revealed = false; }, st, shot, cam, shotAt, diorShot, feedWipe, cut, fog: () => scene.fog, lines: () => dio ? { sup: [+dio.supDash.k.toFixed(2), +dio.supDash.stutter.toFixed(2), dio.supDash.mat.color.getHexString()], plant: dio.plantDash ? [+dio.plantDash.k.toFixed(2), +dio.plantDash.stutter.toFixed(2)] : null, lines: dio.lineDashes.map(d => [d.kind, +d.k.toFixed(2), +d.mat.opacity.toFixed(2)]), ic: dio.assets.filter(x => x.lever === 'ic').map(x => [x.state, x.dash ? x.dash.k : null, !!x.node]), node: dio.nodes.city.material === nodeMatUp ? 'up' : 'base' } : null, setDay: d => { dayNow = d; $('tkDayN').textContent = d; crisisTick(); }, cityLights, evaluate, bestPlanFor, choose, pick, briefing, planRound, timelapse, shock, actOne, actTwo, debrief, cards, board, prologue };
 </script>
